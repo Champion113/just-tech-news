@@ -191,6 +191,7 @@ const votedata = [
   }
 ];
 
-const seedVotes = () => Vote.bulkCreate(votedata, { returning: true });
+const seedVotes = () => Vote.bulkCreate(votedata);
 
 module.exports = seedVotes;
+
